@@ -103,10 +103,12 @@ const menuItems=[
 const MenuSec = () => {
 
   const [menuList,setMenuList]=useState(menuItems)
+  const [activeTab,setActiveTab]=useState(menus[0].id)
 
   const handleTab=(id)=>{
-    const filterList=menuItems.filter(id==="ALL"?setMenuList(menuItems):(each)=>each.category===id)
+    const filterList=id==="ALL"?menuItems:menuItems.filter((each)=>each.category===id)
     setMenuList(filterList)
+    setActiveTab(id)
   }
 
   return (
@@ -114,10 +116,8 @@ const MenuSec = () => {
     <h3>Our Daily <span>Offers</span></h3>
     <ul>
       {menus.map((each)=>(
-        <li key={each.id} onClick={()=>handleTab(each.id)}>
-          <button>
+        <li key={each.id} className={activeTab===each.id?"activeTab":""} onClick={()=>handleTab(each.id)}>
             {each.tab}
-          </button>
         </li>
       ))}
     </ul>
