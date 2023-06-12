@@ -1,0 +1,70 @@
+.menuCard {
+  width: 350px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  &:hover img {
+    transform: scale(120%);
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+
+    .imgContainer {
+      width: 50%;
+      text-align: center;
+      position: relative;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 4rem;
+        width: 4rem;
+        background: #d67e34;
+        border: 7px solid #ffffff;
+        border-radius: 50%;
+        font-family: "Cookie";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+    }
+    h4 {
+      font-family: "ZCOOL XiaoWei";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: #000000;
+    }
+    p {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      text-align: center;
+      color: #000000;
+    }
+    button {
+      background: #d67e34;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: .4rem 1rem;
+    }
+  }
+}

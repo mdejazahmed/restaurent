@@ -1,0 +1,79 @@
+@import "../../styles/styleVar.scss";
+
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  .wrapper {
+    width: 80%;
+    display: flex;
+@include tablet{
+  flex-direction: column;
+}
+    .div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      h4 {
+        font-family: "ZCOOL XiaoWei";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        color: #d67e35;
+        @include tablet{
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      img {
+        align-self: center;
+        width: 50%;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          font-size: larger;
+          color: #d67e35;
+        }
+        
+      }
+      .iconContainer {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .socialIcon{
+        cursor: pointer;
+        &:hover{
+            color: #d67e35;
+        }
+      }
+    }
+    }
+    .logoDiv{
+      @include tablet{
+        order: -1;
+      }
+    }
+  }
+  div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    p{
+        margin: 0;
+    }
+  }
+}

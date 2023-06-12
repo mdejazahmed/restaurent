@@ -1,0 +1,124 @@
+@import "../../styles/styleVar.scss";
+
+.aboutSec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 5rem;
+  .wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+@include tablet{
+  flex-direction: column;
+  width: 100%;
+}
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 2rem;
+      gap: 1rem;
+      @include tablet{
+        width:80%;
+      }
+      h4 {
+        text-align: center;
+        font-family: "Cookie";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5rem;
+        text-align: center;
+        color: #656363;
+        span {
+          color: rgba(214, 126, 52, 1);
+        }
+      }
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #656363;
+        text-align: justify;
+      }
+      .numContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2rem;
+        .num {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h5 {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.5rem;
+            color: #bc9060;
+          }
+          p {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      @include tablet{
+        width:80%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .aboutCounts {
+    align-self: stretch;
+    background-image: url("https://res.cloudinary.com/dxxh8iica/image/upload/v1686389980/restaurant/about_count_q94fzp.png");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        text-align: center;
+        color: #d67e34;
+        @include tablet{
+          font-size: 2.5rem;
+        }
+      }
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        @include tablet{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

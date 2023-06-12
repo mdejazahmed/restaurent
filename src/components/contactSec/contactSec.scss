@@ -1,0 +1,70 @@
+@import "../../styles/styleVar.scss";
+
+.contactSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .wrapper {
+    width: 80%;
+    h2 {
+      font-family: "Cookie";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      color: #000000;
+      text-align: center;
+      span {
+        color: rgba(214, 126, 52, 1);
+      }
+    }
+    div {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      min-height: 60vh;
+      @include tablet{
+        flex-direction: column;
+      }
+      form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        @include tablet{
+          width: 100%;
+          gap: 1rem;
+        }
+        input {
+          font-family: "Open Sans";
+          padding: 0.4rem 1rem;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 1);
+        }
+        button {
+          align-self: center;
+          background: #d67e34;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1rem;
+          text-align: center;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          padding: .5rem 1rem;
+        }
+      }
+      iframe {
+        width: 50%;
+        @include tablet{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
